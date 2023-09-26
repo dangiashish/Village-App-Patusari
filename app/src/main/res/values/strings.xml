@@ -66,7 +66,7 @@
         <string name="covid19_update_title">India Covid-19 Daily Update…</string>
         <string name="btn_sign_out" translatable="false">Sign Out</string>
         <string name="stay_home_stay_safe">Stay Home, Stay Safe</string>
-        <string name="app_version" translatable="false">version 1.0.5</string>
+        <string name="app_version" translatable="false">version 1.0.6</string>
         <string name="terms_amp_conditions"><u>Terms &amp; Conditions</u></string>
         <string name="please_signin_to_continue_the_app">Please Signin to continue the App</string>
         <string name="complaints">Complaints</string>

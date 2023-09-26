@@ -14,6 +14,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -512,8 +513,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         boolean firstrun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstrun", true);
         if (firstrun) {
-            MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.welcome_sound);
-            mediaPlayer.start();
+
+            new Handler().postDelayed(() -> {
+                MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.welcome_sound);
+                mediaPlayer.start();
+            }, 1500);
+
 
             getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                     .edit()

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_10"
+        style="@style/cardview_background_style"
+        app:cardCornerRadius="@dimen/cardview_radius"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/cardview_background_style"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_15"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sans_medium_custom"
+                    android:gravity="start"
+                    android:lineSpacingExtra="@dimen/dim_4"
+                    android:text="There are some standard Google Play Store permissions required to save images or send notifications"
+                   style="@style/sub_text_style"
+                    android:textSize="@dimen/dim_14" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_40"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sans_medium_custom"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    style="@style/sub_text_style"
+                    android:textSize="@dimen/dim_14" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_40"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sans_medium_custom"
+                    android:text="Read T&amp;C"
+                    android:textAllCaps="false"
+                    style="@style/sub_text_style"
+                    android:textSize="@dimen/dim_14" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_40"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sans_medium_custom"
+                    android:text="Permit"
+                    android:textAllCaps="false"
+                    style="@style/sub_text_style"
+                    android:textSize="@dimen/dim_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

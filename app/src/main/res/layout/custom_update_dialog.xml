@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8.0dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/parent_text_style"
+                android:text="Update Available"
+                android:textSize="@dimen/dim_18"
+                />
+
+            <TextView
+                style="@style/sub_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_10"
+                android:text="This version is older, please update to new version"
+                android:textAlignment="textStart"
+                />
+
+            <TextView
+                android:id="@+id/tvKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_10"
+                android:text="Update :"
+                android:textAlignment="textStart"
+                style="@style/sub_text_style"
+                />
+
+
+            <TextView
+                android:id="@+id/tvUpdateKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_10"
+                android:text=""
+                android:textAlignment="textStart"
+               style="@style/shayari_text_style"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="170.0dip"
+                app:lottie_autoPlay="true"
+                app:lottie_progress="1"
+                app:lottie_fileName="update_anim.json"
+                app:lottie_loop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10.0dip"
+                android:weightSum="2.0">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_margin="10.0dip"
+                    android:layout_weight="1.0"
+                    style="@style/button_round_style"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Skip"
+                    android:visibility="gone"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_margin="10.0dip"
+                    android:layout_weight="1.0"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    style="@style/button_round_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

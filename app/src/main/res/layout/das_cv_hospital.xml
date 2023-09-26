@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard.das_cv_hospital"
+    style="@style/page_background_style">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:minHeight="?attr/actionBarSize"
+        android:scrollbarStyle="outsideOverlay"
+
+        app:title="@string/hospital" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_hospital_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardview_side"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/cardview_side"
+                app:cardCornerRadius="@dimen/cardview_radius">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imgSlider_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_below="@id/toolbar"
+                    android:layout_gravity="top"
+                    android:scaleType="centerCrop"
+                    app:iss_delay="0"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_placeholder="@drawable/ic_placeholder"
+                    android:background="@drawable/ic_placeholder"
+                    app:iss_title_background="@drawable/custom_top_blur"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_background_style"
+                android:id="@+id/cardview_docter_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_hospital_image"
+                android:layout_marginStart="@dimen/cardview_side"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/cardview_side"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp">
+                    <TextView
+                        android:id="@+id/drName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sans_bold_custom"
+                        android:text="Loading.."
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/drName"
+                        android:gravity="end"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/iButton_wp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/drName"
+                        android:layout_marginStart="30dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_40px_wp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_doctor_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/cardview_hospital_image"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-30dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="45dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/ic_doctor"
+                    android:id="@+id/img_doctor"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center" />
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/bottom_text_stay_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/sans_medium_custom"
+        android:letterSpacing="0.05"
+        android:text="@string/stay_home_stay_safe"
+        style="@style/sub_text_style"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

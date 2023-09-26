@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_background_style"
+    tools:context=".Dashboard.das_cv_complaints">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/complaints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/etName"
+            style="@style/edittext_layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:fontFamily="@font/sans_bold_custom"
+            android:hint="@string/full_name"
+            android:enabled="true"
+            android:padding="10dp"
+            android:focusable="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:visibility="gone"
+            android:id="@+id/etPhone"
+            style="@style/edittext_layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:digits="0123456789"
+            android:focusable="true"
+            android:fontFamily="@font/sans_medium_custom"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUserEmail_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFeedback"
+            style="@style/edittext_layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/etPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/sans_medium_custom"
+            android:hint="@string/write_complaint_or_feedback"
+            android:inputType="textLongMessage|textMultiLine"
+            android:maxLines="20"
+            android:padding="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/etFeedback"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/button_round_style"
+            android:drawableEnd="@drawable/ic_send_arrow"
+            android:paddingEnd="10dp"
+            android:text="@string/send_complaint"
+             />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipedownRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnSubmit">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

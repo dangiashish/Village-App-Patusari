@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    style="@style/page_background_style">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="57dp"
+        android:layout_height="@dimen/dim_20"
+        android:shadowColor="@color/white"
+        style="@style/button_round_style"
+        android:text="@string/btn_sign_out"
+        android:textSize="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sans_bold_custom"
+        android:gravity="end|bottom"
+        android:letterSpacing="0.05"
+        android:text="@string/toolbar_main_title"
+        android:textAllCaps="true"
+        style="@style/shayari_text_style"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sans_medium_custom"
+        android:gravity="end|bottom"
+        android:letterSpacing="0.05"
+        android:text=""
+        android:textAllCaps="false"
+        style="@style/sub_text_style"
+        android:textSize="12dp" />
+
+</RelativeLayout>

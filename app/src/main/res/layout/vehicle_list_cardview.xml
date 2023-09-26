@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_user_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_marginLeft="@dimen/cardview_side"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="@dimen/cardview_side"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/cardview_background_style"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/cardview_radius"
+    app:cardElevation="6dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textVehicleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sans_bold_custom"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="V name"
+            style="@style/parent_text_style"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textVehicleName"
+            android:fontFamily="@font/sans_medium_custom"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="owner name"
+            style="@style/sub_text_style"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imgVehicle"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imgVehicle"
+            android:background="#663A4CB5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textVehiclePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shayari_text_style"
+                android:fontFamily="@font/sans_light_custom"
+                android:gravity="bottom"
+                android:text="Number" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7.5dp"
+                android:layout_marginBottom="-10dp"
+                app:fab_colorNormal="@color/background_color"
+                app:fab_colorPressed="@color/theme_color"
+                app:fab_icon="@drawable/ic_48px_call"
+                app:fab_size="mini"
+                app:fab_stroke_visible="true"
+                app:fab_title="Call" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/background_color"
+                app:fab_colorPressed="@color/theme_color"
+                app:fab_icon="@drawable/ic_48px_whatsapp"
+                app:fab_size="mini"
+                app:fab_stroke_visible="true"
+                app:fab_title="Whatsapp"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-7.5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

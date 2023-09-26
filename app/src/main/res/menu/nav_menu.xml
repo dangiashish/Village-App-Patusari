@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:visible="false"
+        android:title="@string/main">
+            <menu>
+                <item
+                    android:id="@+id/nav_signin"
+                    android:title="@string/google_signin"
+                    android:icon="@drawable/googleg_standard_color_18"
+                    />
+            </menu>
+    </item>
+
+    <item android:title="@string/social">
+
+        <menu>
+            <item
+                android:title="@string/facebook"
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_grad_facebook"
+                />
+            <item
+                android:title="@string/youtube"
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_grad_youtube"
+                />
+            <item
+                android:id="@+id/nav_whatspp_join"
+                android:title="@string/whatsapp_group"
+                android:icon="@drawable/ic_grad_whatsapp"/>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/other">
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/nav_rate"-->
+<!--                android:title="@string/rate_app"-->
+<!--                android:icon="@drawable/ic_grad_rating"/>-->
+            <item
+                android:id="@+id/nav_policy"
+                android:title="@string/privacy_policy"
+                android:icon="@drawable/ic_grad_policy"/>
+            <item
+                android:id="@+id/nav_share"
+                android:title="@string/share"
+                android:icon="@drawable/ic_grad_share"/>
+            <item
+                android:title="@string/developer"
+                android:icon="@drawable/ic_person"
+                android:id="@+id/nav_developer"/>
+        </menu>
+    </item>
+
+
+</menu>

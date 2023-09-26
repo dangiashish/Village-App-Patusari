@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/page_background_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_spalshscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/welcome_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                style="@style/parent_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans_medium_custom"
+                android:text="@string/welcome_text"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/welcome_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_menu_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sub_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sans_light_custom"
+                android:paddingStart="20dp"
+                android:text="@string/please_signin_to_continue_the_app" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ivGoogle"
+                style="@style/button_round_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_15"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_marginEnd="@dimen/dim_15"
+                android:drawableStart="@drawable/googleg_standard_color_18"
+                android:fontFamily="@font/sans_medium_custom"
+                android:letterSpacing="0.03"
+                android:paddingStart="@dimen/dim_30"
+                android:text="Sign In With Google"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dim_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text"
+                    style="@style/sub_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sans_light_custom"
+                    android:text="@string/text_eula" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ivSkip"
+                style="@style/button_round_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:fontFamily="@font/sans_medium_custom"
+                android:letterSpacing="0.03"
+                android:text="Skip"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dim_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sans_light_custom"
+            android:text="@string/app_version"
+           style="@style/sub_text_style" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

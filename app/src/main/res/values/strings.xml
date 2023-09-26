@@ -1,0 +1,87 @@
+
+    <resources>
+        <string name="app_name">Patusari</string>
+        <string name="open_drawer" translatable="false">Open Drawer</string>
+        <string name="close_drawer" translatable="false">Close Drawer</string>
+        <string name="title_activity_panchayat">panchayat</string>
+        <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+        <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+        <string name="nav_header_title">Panchayat Samiti</string>
+        <string name="nav_header_subtitle">App is on Maintenance</string>
+        <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+        <string name="toolbar_main_title">Patusari, Jhunjhunu</string>
+
+        <string name="menu_malsar">Malsar</string>
+        <string name="menu_devipura">Devipura</string>
+        <string name="menu_charanwas">Charanwas</string>
+
+        <string name="about">About</string>
+        <string name="hospital">Hospital</string>
+        <string name="e_mitra">E-Mitra</string>
+        <string name="school">School</string>
+        <string name="bank">Bank</string>
+        <string name="village_map">Village Map</string>
+        <string name="vehicle_book">Vehicle Book</string>
+        <string name="photos">Photos</string>
+        <string name="google_signin" translatable="false">Sign In</string>
+        <string name="main">MAIN</string>
+        <string name="social">SOCIAL</string>
+        <string name="facebook">Facebook</string>
+        <string name="youtube">Youtube</string>
+        <string name="whatsapp_group">WhatsApp Group</string>
+        <string name="other">OTHER</string>
+        <string name="about_app">About App</string>
+        <string name="share">Share</string>
+        <string name="privacy_policy">Privacy Policy</string>
+        <string name="rate_app">Rate App</string>
+        <string name="feedback">Feedback</string>
+        <string name="developer">Developer</string>
+        <string name="patusari">Patusari</string>
+        <string name="privacy_and_policy">Privacy &amp; Policy</string>
+        <string name="ashish_dangi">Ashish Dangi</string>
+        <string name="roads">Roads</string>
+        <string name="contact_to_developer" translatable="false">Contact to developer</string>
+        <string name="user_notice_for_add_info" translatable="false">Dear User, now you can add your village info in this app. Kindly click on the link below</string>
+        <string name="india_flag" translatable="false"> 🇮🇳</string>
+        <string name="developer_email" translatable="false">ashishdangi96@gmail.com</string>
+        <string name="website_developer" translatable="false">www.codebyashish.com</string>
+        <string name="twitter_developer" translatable="false">ashishdangi369</string>
+        <string name="facebook_developer" translatable="false">Ashish Choudhary</string>
+
+        <string name="changelog_full_title" translatable="false">Changed Log</string>
+        <string name="changelog_title" translatable="false">What\'s New</string>
+        <string name="changelog_ok_button" translatable="false">OKAY</string>
+        <string name="changelog_show_full" translatable="false">More…</string>
+
+        <string name="facebook_app_id" translatable="false">2744861929127548</string>
+        <string name="fb_login_protocol_scheme" translatable="false">fb2744861929127548</string>
+        <string name="welcome_text">Welcome 🙏</string>
+        <string name="note_sunday_s_will_be_holiday">Note : Sunday\'s will be holiday</string>
+        <string name="_09_00_am_05_00_pm" translatable="false">09:00 AM - 05:00 PM</string>
+        <string name="time_table">Time Table :</string>
+        <string name="e_mitra_rajasthan_goverment">e-Mitra Rajasthan Government</string>
+        <string name="e_mitra_kiosk_center_patusari">e-Mitra Kiosk Center, Patusari</string>
+        <string name="patusari_jhunjhunu">Patusari, Jhunjhunu</string>
+        <string name="covid19_update_title">India Covid-19 Daily Update…</string>
+        <string name="btn_sign_out" translatable="false">Sign Out</string>
+        <string name="stay_home_stay_safe">Stay Home, Stay Safe</string>
+        <string name="app_version" translatable="false">version 1.0.5</string>
+        <string name="terms_amp_conditions"><u>Terms &amp; Conditions</u></string>
+        <string name="please_signin_to_continue_the_app">Please Signin to continue the App</string>
+        <string name="complaints">Complaints</string>
+        <string name="successful">Successful</string>
+        <string name="full_name">Full Name</string>
+        <string name="phone_number">Phone Number</string>
+        <string name="write_complaint_or_feedback">Write Complaint or Feedback</string>
+        <string name="location_developer">Find Out Me</string>
+        <string name="app_share_text">Hi, I am using my Village App. It is very useful for us to connect with our village. Kindly download now  market://</string>
+        <string name="send_complaint">Send</string>
+        <string name="exit_confirm">Do You Want To Exit ?</string>
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+        <string name="thanks_for_registration">"Thanks to complete the registration with the App 📱"</string>
+        <string name="text_eula">By signing in, you are agree to our Terms and Conditions &amp; Privacy Policy</string>
+
+
+    </resources>

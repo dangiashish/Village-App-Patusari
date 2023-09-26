@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    style="@style/page_background_style"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        style="@style/page_background_style"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sans_medium_custom"
+            android:gravity="center"
+            android:text="Edit Feedback"
+            style="@style/parent_text_style"
+            android:textSize="15dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editName"
+       style="@style/edittext_layout_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/sans_bold_custom"
+        android:hint="Full Name"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editPhone"
+       style="@style/edittext_layout_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:focusable="true"
+        android:fontFamily="@font/sans_medium_custom"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editFeedback"
+      style="@style/edittext_layout_style"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/editPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:focusable="true"
+        android:fontFamily="@font/sans_medium_custom"
+        android:hint="Feedback"
+        android:inputType="textLongMessage|textMultiLine"
+        android:padding="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/button_round_style"
+        android:text="Update"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

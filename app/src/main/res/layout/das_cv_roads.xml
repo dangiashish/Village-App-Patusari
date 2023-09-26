@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.das_cv_roads"
+    style="@style/page_background_style">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/toolbar_background"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:title="@string/roads"/>-->
+
+    <TextView
+        style="@style/sub_text_style"
+        android:id="@+id/working"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sans_bold_custom"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="We are working on this feature, and we will add this feature in upcoming update. \n If You want to help us in this work kindly Click on the button below."
+        android:textSize="20dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:layout_height="wrap_content"
+        android:id="@+id/butnHelp"
+        style="@style/button_round_style"
+        android:text="Contribute in development"
+        android:layout_below="@id/working"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        style="@style/icon_tint_style"
+        android:id="@+id/btn_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_closs"
+        android:background="@color/transparent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regards : Ashish"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sans_medium_custom"/>
+</RelativeLayout>

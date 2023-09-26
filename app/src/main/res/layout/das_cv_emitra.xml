@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.das_cv_emitra"
+    style="@style/page_background_style">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/e_mitra" />
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardview_background_style"
+        android:id="@+id/brkgb_logo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/cardview_side"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/cardview_side"
+        app:cardCornerRadius="@dimen/cardview_radius"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagelogo"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sans_bold_custom"
+                android:paddingStart="10dp"
+                android:text="@string/e_mitra_rajasthan_goverment"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/brkgb_logo">
+
+        <RelativeLayout
+            android:id="@+id/relativelayut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_background_style"
+                android:id="@+id/brkgb_title_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="@dimen/cardview_side"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/cardview_side"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/brkgb_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/sans_medium_custom"
+                        android:text="@string/e_mitra_kiosk_center_patusari"
+                        android:textColor="@color/orange"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/brkgb_name_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/brkgb_name"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/sans_medium_custom"
+                        android:text="@string/patusari_jhunjhunu"
+                        android:textColor="@color/green"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_background_style"
+                android:id="@+id/bank_info_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brkgb_title_cardview"
+                android:layout_marginLeft="@dimen/cardview_side"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/cardview_side"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/center_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="onClick"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Center Name"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text=":"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="SVG EXPRESS SERVICES PVT LTD"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/center_sso_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/center_name"
+                        android:layout_margin="10dp"
+                        android:onClick="onClick"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Center SSO ID"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text=":"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="GOMT********LAGE"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kiosk_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/center_sso_id"
+                        android:layout_margin="10dp"
+                        android:onClick="onClick"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Kiosk Code"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text=":"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="K103168864"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/center_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kiosk_code"
+                        android:layout_margin="10dp"
+                        android:onClick="onClick"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Center Contact"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_light_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text=":"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="+918104171305"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_background_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_cardview"
+                android:layout_below="@id/bank_info_cardview"
+                android:layout_marginLeft="@dimen/cardview_side"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/cardview_side"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                android:layout_marginBottom="12dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_table"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/sans_medium_custom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monday to Saturday"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sans_light_custom"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_09_00_am_05_00_pm"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sans_light_custom"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note_sunday_s_will_be_holiday"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/sans_light_custom"
+                        android:textSize="12dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

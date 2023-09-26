@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   style="@style/page_background_style"
+    tools:context=".Dashboard.das_cv_photos">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/photos"/>
+
+
+    <RelativeLayout
+        android:id="@+id/imageUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/uploaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/cardview_side"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/image_view"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/button_round_style"
+                android:id="@+id/btnbrowse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/cardview_side"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/cardview_side"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_white_bg"
+                android:drawableStart="@drawable/ic_browser_image"
+                android:paddingStart="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/sans_medium_custom"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Choose Image"
+                android:textSize="13dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/button_round_style"
+                android:id="@+id/btnupload"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/cardview_side"
+                android:layout_marginEnd="@dimen/cardview_side"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="40dp"
+                android:drawableLeft="@drawable/ic_upload_image"
+                android:background="@drawable/rounded_white_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/sans_bold_custom"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Upload Image"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/imageUpload"
+        android:layout_marginStart="@dimen/cardview_side"
+        android:layout_marginEnd="@dimen/cardview_side"
+        android:background="#4D3A4CB5" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipedownRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_photosGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

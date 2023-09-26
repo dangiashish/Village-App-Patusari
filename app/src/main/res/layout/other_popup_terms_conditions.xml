@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TermsConditionsActivity"
+    style="@style/page_background_style">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/terms_conditions_title"
+        android:text="@string/terms_amp_conditions"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        android:fontFamily="@font/sans_bold_custom"
+        style="@style/parent_text_style"
+        android:padding="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        style="@style/icon_tint_style"
+        android:src="@drawable/ic_closs"
+        android:background="@color/transparent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/btn_close">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/terms_conditions"
+                android:text="Loading..."
+                android:textAlignment="textStart"
+                android:textSize="15dp"
+                android:fontFamily="@font/sans_light_custom"
+                style="@style/sub_text_style"
+                android:padding="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

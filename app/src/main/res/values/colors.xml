@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="background_color">#EBEEFF</color>
+    <color name="theme_color">#3F51B5</color>
+    <color name="theme_color_dark_mode">#A2B0FF</color>
+    <color name="text_color">#3F51B5</color>
+    <color name="text_color_dark_mode">#9FA7D5</color>
+    <color name="light_text_color">#7A8EFF</color>
+    <color name="shayari_text_color">#3F51B5</color>
+    <color name="light_black">#2E2E2E</color>
+    <color name="colorAccent">#283373</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="top_color">#ff951c22</color>
+    <color name="bottom_color">#ff6d2451</color>
+    <color name="colorPrimaryVariant">#690202</color>
+    <color name="white">#fff</color>
+    <color name="light_white">#EFF1FF</color>
+    <color name="red">#f00</color>
+    <color name="green">#358556</color>
+    <color name="orange">#FF6D00</color>
+    <color name="black">#000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="blue_link">#2E4AE4</color>
+    <color name="black_shadow">#B3000000</color>
+    <color name="cardview_background">#fff</color>
+    <color name="lite_gray">#878787</color>
+    <color name="yellow">#fff200</color>
+    <color name="light_cardview">#744D3333</color>
+    <color name="light_cardview2">#FFF2F3</color>
+    <color name="fb_button_color">#4267B2</color>
+    <color name="mainActivityNavigationColor">#22171B</color>
+    <color name="QuotesActivityNavigationColor">#542418</color>
+    <color name="WishesActivityNavigationColor">#251515</color>
+    <color name="ShayariActivityNavigationColor">#060000</color>
+    <color name="mainActivityStatusBarColor">#461521</color>
+    <color name="QuotesActivityStatusBarColor">#070E14</color>
+    <color name="WishesActivityStatusBarColor">#9F4B2F</color>
+    <color name="ShayariActivityStatusBarColor">#461521</color>
+    <color name="trans_10">#E6FFFFFF</color>
+    <color name="trans_20">#CCFFFFFF</color>
+    <color name="trans_30">#B3FFFFFF</color>
+    <color name="trans_40">#99FFFFFF</color>
+    <color name="trans_50">#80FFFFFF</color>
+    <color name="trans_60">#99FFFFFF</color>
+    <color name="trans_70">#4DFFFFFF</color>
+    <color name="trans_80">#33FFFFFF</color>
+
+    <!-- dark mode -->
+    <color name="background_color_dark_mode">#191B25</color>
+    <!--    <color name="shayari_text_color_dark_mode">#9FA7D5</color>-->
+    <color name="shayari_text_color_dark_mode">#F19EA2</color>
+    <color name="cardview_background_dark">#343850</color>
+</resources>

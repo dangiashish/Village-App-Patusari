@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_background_style"
+    tools:context=".Dashboard.das_cv_bank"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:title="@string/bank" />
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardview_background_style"
+        android:id="@+id/brkgb_logo"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="@dimen/cardview_side"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/cardview_side"
+        app:cardCornerRadius="@dimen/cardview_radius"
+        app:cardElevation="3dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_period="1000"
+            app:iss_placeholder="@drawable/ic_placeholder"
+            app:iss_selected_dot="@drawable/default_selected_dot" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/brkgb_logo">
+
+            <RelativeLayout
+                android:id="@+id/relativelayut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/brkgb_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="@dimen/cardview_side"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/cardview_side"
+                    app:cardCornerRadius="@dimen/cardview_radius"
+                    app:cardElevation="3dp"
+                    style="@style/cardview_background_style"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/brkgb_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/brkgb_logo"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:text="Baroda Rajasthan Kshetriya Gramin Bank"
+                            android:textColor="@color/orange"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/brkgb_name_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/brkgb_name"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/sans_medium_custom"
+                            android:text="Patusari, Jhunjhunu"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bank_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brkgb_title"
+                    android:layout_marginLeft="@dimen/cardview_side"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/cardview_side"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="@dimen/cardview_radius"
+                    app:cardElevation="3dp"
+                    style="@style/cardview_background_style"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/branch_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Branch Name"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text=":"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_medium_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="BRKGB Patusari"
+                                android:textColor="@color/red"
+                                android:textSize="15dp"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/branch_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/branch_name"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Branch ID"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text=":"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_medium_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="4705"
+                                android:textColor="@color/red"
+                                android:textSize="15dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/branch_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/branch_id"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Branch Code"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text=":"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_medium_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="PTUJJN"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/red"
+                                android:textSize="15dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/branch_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/branch_code"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:onClick="onClick">
+
+                            <TextView
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Branch Contact"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_light_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text=":"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_medium_custom"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="7726854705"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/red"
+                                android:textSize="15dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

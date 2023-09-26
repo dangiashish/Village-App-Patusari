@@ -58,7 +58,6 @@ public class KeyConstants {
 
     // fcm notifications
     public static String FCM_BASE_URL= "https://fcm.googleapis.com";
-    public static String FCM_SERVER_KEY= "key=AAAA493ZXjU:APA91bFKl_DCUn3af5-530PZfiYU-U3ZNzaKcpG9zXpLGdeVFiyb4QqyKubCxMWHd-G3LoqBIGmwZKnTxUCYpdAMBJo52VKOVwcAh3ZjwO8sglLpchwQIw6DryFDNvCZiyRS5cEFLaIY";
     public static String FCM_CONTENT_TYPE= "application/json";
 
 
